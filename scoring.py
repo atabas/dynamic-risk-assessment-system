@@ -41,6 +41,7 @@ def score_model(test_data_path, test_data_csv_name):
         f.write(str(f1_score))
 
     print("f1 score is: ", f1_score)
+    return f1_score
 
 
 if __name__ == "__main__":
