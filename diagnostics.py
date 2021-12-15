@@ -1,11 +1,11 @@
-import pandas as pd
-import numpy as np
-import time
-import os
 import json
+import os
 import pickle
 import subprocess as sp
 import sys
+import time
+
+import pandas as pd
 
 ##################Load config.json and get environment variables
 with open("config.json", "r") as f:

@@ -1,15 +1,13 @@
-import pickle
-from sklearn.model_selection import train_test_split
-import pandas as pd
-import numpy as np
-from sklearn import metrics
-import matplotlib.pyplot as plt
-import seaborn as sns
 import json
 import os
-from diagnostics import model_predictions
-import seaborn as sns
 
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+import seaborn as sns
+from sklearn import metrics
+
+from diagnostics import model_predictions
 
 ###############Load config.json and get path variables
 with open("config.json", "r") as f:

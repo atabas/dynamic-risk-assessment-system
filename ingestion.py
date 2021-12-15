@@ -1,9 +1,7 @@
-import pandas as pd
-import numpy as np
-import os
 import json
-from datetime import datetime
+import os
 
+import pandas as pd
 
 #############Load config.json and get input and output paths
 with open("config.json", "r") as f:
