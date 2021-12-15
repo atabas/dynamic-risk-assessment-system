@@ -1,6 +1,7 @@
 import json
 import os
 import pickle
+import pandas as pd
 
 from flask import Flask, request
 
@@ -30,7 +31,8 @@ with open(model_path, "rb") as f:
 def predict():
     # call the prediction function you created in Step 3
     dataset = request.args.get("dataset")
-    preds = model_predictions(dataset)
+    df = pd.read_csv(dataset)
+    preds = model_predictions(df)
     return str(preds)
 
 

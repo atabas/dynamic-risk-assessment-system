@@ -26,7 +26,7 @@ def score_model(test_data_path, test_data_csv_name):
     test_dataset_path = os.path.join(test_data_path, test_data_csv_name)
     df = pd.read_csv(test_dataset_path)
 
-    predictions = model_predictions(test_data_csv_name)
+    predictions = model_predictions(df)
     y_test = df["exited"]
     cfm = metrics.confusion_matrix(y_test, predictions)
 
