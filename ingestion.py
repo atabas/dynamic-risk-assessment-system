@@ -38,4 +38,5 @@ def merge_multiple_dataframe():
 
 
 if __name__ == "__main__":
+    print("Running ingestion.py......")
     merge_multiple_dataframe()
